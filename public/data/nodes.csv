@@ -1,0 +1,30 @@
+﻿id,label,categorie,cluster,mrc_code,mrc_nom,region,lon,lat
+node_mrc_14,Kamouraska,beneficiaire,,14,MRC de Kamouraska,Bas-Saint-Laurent,-69.807129,47.526475
+node_mrc_07,La Matapédia,beneficiaire,,7,MRC La Matapédia,Bas-Saint-Laurent,-67.430134,48.466548
+node_mrc_09,La Mitis,beneficiaire,,9,MRC La Mitis,Bas-Saint-Laurent,-68.23235,48.609902
+node_mrc_11,Les Basques,beneficiaire,,11,MRC Les Basques,Bas-Saint-Laurent,-69.170265,48.122789
+node_mrc_10,Rimouski-Neigette,beneficiaire,,10,MRC Rimouski-Neigette,Bas-Saint-Laurent,-68.529282,48.449699
+node_mrc_12,Rivière-du-Loup,beneficiaire,,12,MRC Rivière-du-Loup,Bas-Saint-Laurent,-69.535904,47.835514
+node_mrc_08,La Matanie,beneficiaire,,8,MRC La Matanie,Bas-Saint-Laurent,-67.531860,48.846643
+node_mrc_13,Témiscouata,beneficiaire,,13,MRC Témiscouata,Bas-Saint-Laurent,-68.807373,47.614958
+node_mandataire,Mandataire,mandataire,tac,,Rimouski-Neigette,Bas-Saint-Laurent,-68.529282,48.449699
+node_sci_01,Géographie physique,scientifique,tac,,Rimouski-Neigette,Bas-Saint-Laurent,-68.529282,48.449699
+node_sci_02,Océanographie chimique,scientifique,tac,,Rimouski-Neigette,Bas-Saint-Laurent,-68.529282,48.449699
+node_sci_03,Développement territorial,scientifique,tac,,Rimouski-Neigette,Bas-Saint-Laurent,-68.529282,48.449699
+node_sci_04,Travail social,scientifique,tac,,Rimouski-Neigette,Bas-Saint-Laurent,-68.529282,48.449699
+node_sci_05,Océanographie physique,scientifique,tac,,Rimouski-Neigette,Bas-Saint-Laurent,-68.529282,48.449699
+node_sci_07,Économie,scientifique,tac,,Rimouski-Neigette,Bas-Saint-Laurent,-68.529282,48.449699
+node_sci_08,Géomorphologie,scientifique,tac,,Rimouski-Neigette,Bas-Saint-Laurent,-68.529282,48.449699
+node_sci_06,Éducation,scientifique,tac,,Agglomération de Lévis,Chaudière-Appalaches,-71.161329,46.792063
+node_mrc_982,Le Golfe-du-St-Laurent,beneficiaire,,982,MRC Le Golfe-du-St-Laurent,Côte-Nord,-59.61731,50.467557
+node_mrc_96,Manicouagan,beneficiaire,,96,MRC Manicouagan,Côte-Nord,-68.178406,49.210869
+node_mrc_981,Minganie,beneficiaire,,981,MRC Minganie,Côte-Nord,-63.597794,50.250278
+node_mrc_971,Sept-Rivières,beneficiaire,,971,MRC Sept-Rivières,Côte-Nord,-66.386261,50.212064
+node_mrc_972,Caniapiscau,beneficiaire,,972,MRC Caniapiscau,Côte-Nord,-67.082520,52.796119
+node_mrc_950,La Haute-Côte-Nord,beneficiaire,,950,MRC La Haute-Côte-Nord,Côte-Nord,-69.423981,48.349861
+node_mrc_06,Avignon,beneficiaire,,6,MRC Avignon,Gaspésie–Îles-de-la-Madeleine,-66.008836,48.203722
+node_mrc_05,Bonaventure,beneficiaire,,5,MRC Bonaventure,Gaspésie–Îles-de-la-Madeleine,-65.491672,48.04446
+node_mrc_01,Communauté maritime des Îles-de-la-Madeleine,beneficiaire,,1,Communauté maritime des Îles-de-la-Madeleine,Gaspésie–Îles-de-la-Madeleine,-61.866074,47.37743
+node_mrc_03,La Côte-de-Gaspé,beneficiaire,,3,MRC La Côte-de-Gaspé,Gaspésie–Îles-de-la-Madeleine,-64.484253,48.83173
+node_mrc_02,Le Rocher-Percé,beneficiaire,,2,MRC Le Rocher-Percé,Gaspésie–Îles-de-la-Madeleine,-64.213715,48.522517
+node_mrc_04,La Haute-Gaspésie,beneficiaire,,4,MRC La Haute-Gaspésie,Gaspésie–Îles-de-la-Madeleine,-66.484451,49.126017

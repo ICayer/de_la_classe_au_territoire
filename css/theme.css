@@ -1,0 +1,83 @@
+/* ============================================
+   THEME.CSS — Variables paramétrables
+   Modifier ici pour changer l'apparence globale
+   ============================================ */
+
+:root {
+
+  /* ==================
+     TYPOGRAPHIE
+     ================== */
+  --font-display: 'Autour One', cursive;
+  --font-body: 'Zilla Slab', serif;
+
+  --size-h1: clamp(2.8rem, 6vw, 5.5rem);
+  --size-h2: clamp(1.8rem, 3.5vw, 2.8rem);
+  --size-h3: clamp(1.2rem, 2vw, 1.5rem);
+  --size-body: clamp(1rem, 1.5vw, 1.15rem);
+  --size-small: 0.875rem;
+
+  --leading-tight: 1.15;
+  --leading-body: 1.75;
+
+  /* ==================
+     COULEURS
+     ================== */
+  --color-bg:         #ffffff;
+  --color-bg-alt:     #ffffff;
+  --color-surface:    #ffffff;
+
+  --color-ink:        #1c1a17;
+  --color-ink-muted:  #5a5549;
+  --color-ink-faint:  #9a9080;
+
+  --color-accent:     #c0392b;
+  --color-accent-alt: #2c6e49;
+  --color-accent-warm:#e8a838;
+
+  --color-border:       rgba(28, 26, 23, 0.12);
+  --color-border-strong:rgba(28, 26, 23, 0.28);
+
+  /* ==================
+     ESPACEMENT
+     ================== */
+  --space-xs:   0.5rem;
+  --space-sm:   1rem;
+  --space-md:   2rem;
+  --space-lg:   4rem;
+  --space-xl:   7rem;
+  --space-2xl: 10rem;
+
+  /* ==================
+     MISE EN PAGE
+     ================== */
+  --max-width:       900px;
+  --max-width-wide: 1200px;
+  --radius-sm:   4px;
+  --radius-md:  10px;
+  --radius-lg:  20px;
+
+  /* ==================
+     VISUALISATION
+     ================== */
+
+  /* Hauteur totale de la section viz (carte + timeline) */
+  --viz-total-height: 100vh;
+
+  /* Hauteur réservée pour le timeSlider sous la carte */
+  /* Doit correspondre à --timeline-height dans timeSlider.js */
+  --timeline-height: 120px;
+
+  /* Hauteur effective du SVG D3 (#vis) */
+  /* = total - timeline = 100vh - 120px */
+  --vis-height: calc(var(--viz-total-height) - var(--timeline-height));
+
+  --vis-bg: #1c1a17;
+
+  /* ==================
+     TRANSITIONS
+     ================== */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 600ms ease;
+}

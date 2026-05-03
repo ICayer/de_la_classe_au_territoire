@@ -1,0 +1,280 @@
+    <!-- ==============================
+         index.html
+         Version 3 mai 2026
+         ============================== -->
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ce qui reste de nous</title>
+    <meta name="description" content="Réseau de collaborations scientifiques dans l'Est-du-Québec — visualisation de données interactive." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Autour+One&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Librairies D3 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-tile@1"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- ==============================
+         NAVIGATION LANGUE
+         ============================== -->
+    <nav class="nav-langue" aria-label="Sélection de la langue">
+      <button id="btn-fr" class="active" onclick="setLangue('fr')" aria-label="Français">FR</button>
+      <button id="btn-en" onclick="setLangue('en')" aria-label="English">EN</button>
+    </nav>
+
+
+    <!-- ==============================
+         SECTION 1 — INTRODUCTION
+         ============================== -->
+    <section class="section-intro" id="intro">
+
+      <h1 class="section-intro__titre">
+        <span data-lang="fr" class="visible">Ce qui reste de nous</span>
+        <span data-lang="en">What Remains of Us</span>
+      </h1>
+
+      <!-- Image représentative — remplacer src par l'image du projet -->
+      <img
+        src="public/data/images/intro.webp"
+        alt="Réseau de collaborations dans l'Est-du-Québec"
+        class="section-intro__image"
+        onerror="this.style.display='none'"
+      />
+
+      <div class="section-intro__texte">
+
+        <p data-lang="fr" class="visible">
+          Entre janvier 2024 et janvier 2030, un réseau de collaborations
+          scientifiques prend forme dans l'Est-du-Québec. Des mandataires,
+          bénéficiaires, collaborateurs et scientifiques tissent des liens
+          d'affaires autour d'un projet structurant commun.
+        </p>
+        <p data-lang="en">
+          Between January 2024 and January 2030, a network of scientific
+          collaborations takes shape in Eastern Québec. Mandataries,
+          beneficiaries, collaborators and scientists weave business
+          relationships around a shared structuring project.
+        </p>
+
+        <p data-lang="fr" class="visible">
+          Cette visualisation retrace l'émergence de ces liens au fil du temps :
+          qui collabore avec qui, quand et pour quels types de services.
+        </p>
+        <p data-lang="en">
+          This visualization traces the emergence of these relationships over
+          time: who collaborates with whom, when, and for what types of services.
+        </p>
+
+      </div>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+    </section>
+
+
+    <!-- ==============================
+         SECTION 2 — VISUALISATION
+         ============================== -->
+    <section class="section-viz" id="visualisation" aria-label="Visualisation du réseau de collaborations">
+
+      <!-- Label flottant (optionnel) -->
+      <p class="section-viz__label">
+        <span data-lang="fr" class="visible">Réseau de collaborations · Est-du-Québec</span>
+        <span data-lang="en">Collaboration network · Eastern Québec</span>
+      </p>
+
+      <!-- viz-wrapper : position relative pour que légende/panneau/bouton
+           soient confinés à cette section (position absolute) -->
+      <div id="viz-wrapper">
+
+        <!-- Conteneur D3 — ciblé par main.js via document.getElementById("vis") -->
+        <div id="vis"></div>
+
+        <!-- Zone timeline — le SVG du slider sera injecté ici par timeSlider.js -->
+        <div id="timeline-container"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==============================
+         SECTION 3 — REMERCIEMENTS
+         ============================== -->
+    <section class="section-merci" id="remerciements">
+
+      <!-- Image de remerciement — remplacer src -->
+      <img
+        src="public/data/images/merci.webp"
+        alt="Image de remerciement"
+        class="section-merci__image"
+        onerror="this.style.display='none'"
+      />
+
+      <div class="section-merci__contenu">
+
+        <h2>
+          <span data-lang="fr" class="visible">Remerciements</span>
+          <span data-lang="en">Acknowledgements</span>
+        </h2>
+
+        <p data-lang="fr" class="visible">
+          Ce projet est le fruit d'une collaboration entre plus de 500
+          participant·e·s scientifiques réparti·e·s dans quatre universités
+          canadiennes. Nos remerciements vont à l'ensemble des MRC de
+          l'Est-du-Québec et à leurs équipes pour leur engagement et leur
+          confiance.
+        </p>
+        <p data-lang="en">
+          This project is the result of a collaboration between more than 500
+          scientific participants spread across four Canadian universities.
+          Our thanks go to all the MRCs of Eastern Québec and their teams
+          for their commitment and trust.
+        </p>
+
+        <p data-lang="fr" class="visible">
+          Hommage aux membres de communautés, chercheur·euses et citoyen·nes
+          qui œuvrent à enrichir les connaissances et à habiter le territoire
+          avec sens.
+        </p>
+        <p data-lang="en">
+          Tribute to community members, researchers and citizens who work
+          to enrich knowledge and inhabit the territory with meaning.
+        </p>
+
+        <!-- Pas nécessaire dans ce projet, mais je vais le garder au cas
+        <div class="auteur-container">
+          <h4>
+            <span data-lang="fr" class="visible">Conception et idéation</span>
+            <span data-lang="en">Design and ideation</span>
+          </h4>
+          <div class="nom-reseaux">
+            <p class="nom-artiste">Isabel Cayer</p>
+            <div class="logos">
+              <a href="https://www.agora-uqar.com" target="_blank" title="L'Agora – UQAR">
+                <img
+                  src="public/data/images/Agora.png"
+                  alt="L'Agora"
+                  class="icon-gris"
+                  onerror="this.style.display='none'"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+-->
+
+      </div>
+
+    </section>
+
+
+    <!-- ==============================
+         FOOTER
+         ============================== -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+
+        <!-- Équipe -->
+        <div class="footer-col">
+          <h4>
+            <span data-lang="fr" class="visible">Équipe de projet</span>
+            <span data-lang="en">Project team</span>
+          </h4>
+          <p>
+            <strong>Annie Trépanier</strong>
+            <span data-lang="fr" class="visible">, idéation et rédaction du récit (L'Agora – UQAR)</span>
+            <span data-lang="en">, ideation and storytelling (L'Agora – UQAR)</span>
+          </p>
+          <p>
+            <strong>Isabel Cayer</strong>
+            <span data-lang="fr" class="visible">, idéation, prototypage et visualisation de données (L'Agora – UQAR)</span>
+            <span data-lang="en">, ideation, prototyping and data vizualisation (L'Agora – UQAR)</span>
+          </p>
+          <!-- Ajouter les autres membres ici -->
+        </div>
+
+        <!-- Produit par -->
+        <div class="footer-col">
+          <h4>
+            <span data-lang="fr" class="visible">Produit par</span>
+            <span data-lang="en">Produced by</span>
+          </h4>
+          <div class="footer-logos">
+            <a href="https://www.agora-uqar.com" target="_blank" rel="noopener">
+              <img class="logo-partenaire" src="public/data/images/Agora.png" alt="L'Agora – UQAR" onerror="this.style.display='none'" />
+            </a>
+            <a href="https://www.uqar.ca" target="_blank" rel="noopener">
+              <img class="logo-partenaire" src="public/data/images/UQAR.png" alt="Université du Québec à Rimouski" onerror="this.style.display='none'" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Partenaires financiers -->
+        <div class="footer-col">
+          <h4>
+            <span data-lang="fr" class="visible">Partenaires financiers</span>
+            <span data-lang="en">Financial partners</span>
+          </h4>
+          <div class="footer-logos">
+            <a href="https://www.cfref-apogee.gc.ca/home-accueil-fra.aspx" target="_blank" rel="noopener">
+              <img class="logo-partenaire" src="public/data/images/CFREF.png" alt="Fonds d'excellence en recherche Apogée du Canada" onerror="this.style.display='none'" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- ==============================
+         SCRIPTS
+         ============================== -->
+
+    <!-- i18n inline — léger, pas besoin d'un fichier séparé à ce stade -->
+    <script>
+      // Langue active (FR par défaut)
+      let langueActive = 'fr';
+
+      function setLangue(lang) {
+        langueActive = lang;
+
+        // Mettre à jour l'attribut lang du document (accessibilité + SEO)
+        document.documentElement.lang = lang;
+
+        // Afficher/masquer les éléments selon la langue
+        document.querySelectorAll('[data-lang]').forEach(el => {
+          el.classList.toggle('visible', el.dataset.lang === lang);
+        });
+
+        // Mettre à jour les boutons actifs
+        document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+        // Notifier main.js si besoin (pour la légende, tooltips, etc.)
+        document.dispatchEvent(new CustomEvent('langueChanged', { detail: { lang } }));
+      }
+
+      // Initialisation au chargement
+      setLangue('fr');
+    </script>
+
+    <!-- Point d'entrée D3 — chargé en dernier pour que le DOM soit prêt -->
+    <script type="module" src="js/main.js"></script>
+
+  </body>
+</html>
