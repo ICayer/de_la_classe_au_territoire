@@ -11,6 +11,7 @@ import { updateLinks } from "../layers/linksLayer.js";
 import { state } from "../state.js";
 import { t, getLocale } from "../utils/i18n.js";
 import { updateDonutCharts } from "../components/donutChart.js";
+import { updateServiceButtons } from "../components/serviceButtons.js";
 
 // --------------------------------------------------
 // CONFIGURATION — ajuster ici sans toucher au code
@@ -242,6 +243,7 @@ function moveTo(date) {
     isThrottled = true;
     updateLinks(clamped);
     updateDonutCharts(clamped);
+    updateServiceButtons(clamped);
     setTimeout(() => { isThrottled = false; }, THROTTLE_MS);
   }
 }

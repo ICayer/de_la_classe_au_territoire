@@ -1,0 +1,298 @@
+/* ============================================
+   SERVICE-MODAL.CSS
+   Styles pour les boutons pulse service
+   et la fenêtre surgissante des pages service
+   À importer dans style.css ou index.html
+   version 6 mai 2026
+   ============================================ */
+
+/* ==================
+   OVERLAY
+   ================== */
+
+#service-overlay {
+  display:          none;
+  position:         absolute;
+  inset:            0;
+  background:       rgba(0, 0, 0, 0.65);
+  z-index:          200;
+  backdrop-filter:  blur(2px);
+}
+
+#service-overlay.open {
+  display: block;
+}
+
+/* ==================
+   MODAL CONTENEUR
+   ================== */
+
+#service-modal {
+  display:       none;
+  position:      absolute;
+  top:           50%;
+  left:          50%;
+  transform:     translate(-50%, -50%) scale(0.96);
+  width:         80%;
+  height:        80%;
+  z-index:       210;
+  background:    #0f0e0d;
+  border-radius: 10px;
+  overflow:      hidden;
+  flex-direction:column;
+  box-shadow:    0 24px 64px rgba(0, 0, 0, 0.6);
+  transition:    transform 280ms cubic-bezier(0.34, 1.56, 0.64, 1),
+                 opacity   280ms ease;
+  opacity:       0;
+}
+
+#service-modal.open {
+  display:   flex;
+  transform: translate(-50%, -50%) scale(1);
+  opacity:   1;
+}
+
+/* ==================
+   BOUTON FERMER
+   ================== */
+
+#service-modal-close {
+  position:    absolute;
+  top:         14px;
+  right:       16px;
+  z-index:     220;
+  background:  rgba(255, 255, 255, 0.1);
+  border:      1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width:       34px;
+  height:      34px;
+  color:       rgba(255, 255, 255, 0.8);
+  font-size:   1rem;
+  cursor:      pointer;
+  display:     flex;
+  align-items: center;
+  justify-content: center;
+  transition:  background 150ms ease, color 150ms ease;
+}
+
+#service-modal-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color:      #ffffff;
+}
+
+/* ==================
+   ZONE DE CONTENU
+   ================== */
+
+#service-modal-content {
+  flex:       1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.2) transparent;
+}
+
+.modal-loading {
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  height:          100%;
+  color:           rgba(255,255,255,0.4);
+  font-size:       1.5rem;
+}
+
+.modal-error {
+  padding: 2rem;
+  color:   rgba(255, 100, 100, 0.8);
+}
+
+/* ==================
+   PAGE DE SERVICE
+   ================== */
+
+.service-page {
+  display:        flex;
+  flex-direction: column;
+  min-height:     100%;
+  font-family:    var(--font-body, sans-serif);
+  color:          rgba(245, 240, 232, 0.88);
+}
+
+/* data-lang — même pattern que index.html */
+.service-page[data-lang]         { display: none; }
+.service-page[data-lang].visible { display: flex; }
+
+/* ── EN-TÊTE ── */
+
+.sp-header {
+  flex-shrink: 0;
+}
+
+.sp-banner {
+  width:    100%;
+  height:   160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sp-banner-placeholder {
+  width:   100%;
+  height:  100%;
+  opacity: 0.35;
+  /* Motif diagonal subtil en attendant l'image réelle */
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.06) 0px,
+    rgba(255,255,255,0.06) 1px,
+    transparent 1px,
+    transparent 12px
+  );
+}
+
+.sp-header-meta {
+  padding:         20px 28px 16px;
+  display:         flex;
+  flex-direction:  column;
+  gap:             10px;
+  border-bottom:   1px solid rgba(255,255,255,0.08);
+  background:      rgba(15, 14, 13, 0.95);
+}
+
+.sp-service-badge {
+  display:       inline-flex;
+  align-items:   center;
+  padding:       4px 12px;
+  border-radius: 20px;
+  font-size:     0.72rem;
+  font-weight:   700;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:         #ffffff;
+  align-self:    flex-start;
+}
+
+.sp-title {
+  font-size:   1.35rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color:       #ffffff;
+  max-width:   640px;
+}
+
+/* ── CORPS ── */
+
+.sp-body {
+  flex:    1;
+  padding: 28px 28px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background: #0f0e0d;
+}
+
+.sp-section {
+  display:        flex;
+  flex-direction: column;
+  gap:            10px;
+}
+
+.sp-section-title {
+  font-size:     0.78rem;
+  font-weight:   700;
+  text-transform:uppercase;
+  letter-spacing:0.1em;
+}
+
+.sp-sep {
+  width:         40px;
+  height:        3px;
+  border-radius: 2px;
+  opacity:       0.8;
+}
+
+.sp-section p {
+  font-size:   0.9rem;
+  line-height: 1.7;
+  color:       rgba(245, 240, 232, 0.75);
+}
+
+/* ── CITATION ── */
+
+.sp-section--quote {
+  margin-top: 4px;
+}
+
+.sp-quote {
+  border-left: 4px solid;    /* couleur via style inline */
+  padding:     14px 20px;
+  margin:      0;
+  background:  rgba(255,255,255,0.04);
+  border-radius: 0 6px 6px 0;
+}
+
+.sp-quote p {
+  font-size:   1rem;
+  font-style:  italic;
+  line-height: 1.6;
+  color:       rgba(245, 240, 232, 0.88);
+  margin:      0 0 8px;
+}
+
+.sp-quote-author {
+  font-size:  0.78rem;
+  color:      rgba(245, 240, 232, 0.45);
+  font-style: normal;
+}
+
+/* ── PIED DE PAGE ── */
+
+.sp-footer {
+  flex-shrink: 0;
+  margin-top:  28px;
+  padding:     14px 28px;
+  opacity:     0.92;
+}
+
+.sp-footer-inner {
+  display:     flex;
+  align-items: center;
+  flex-wrap:   wrap;
+  gap:         10px;
+  font-size:   0.78rem;
+  color:       rgba(255,255,255,0.9);
+}
+
+.sp-footer-sep {
+  opacity: 0.5;
+}
+
+.sp-footer-parties strong {
+  font-weight: 700;
+  color:       #ffffff;
+}
+
+/* ==================
+   ANIMATION PULSE — boutons service
+   Définie en CSS pur, déclenchée par JS (classe .pulsing)
+   ================== */
+
+@keyframes pulse-sonar {
+  0%   { transform: scale(0.9); opacity: 0.75; }
+  65%  { transform: scale(2.2); opacity: 0;    }
+  100% { transform: scale(2.2); opacity: 0;    }
+}
+
+.service-btn .pulse-ring {
+  transform-origin: center;
+  transform-box:    fill-box;
+}
+
+/* Anneau 1 — part immédiatement */
+.service-btn.pulsing .pulse-ring-1 {
+  animation: pulse-sonar 2.4s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+}
+
+/* Anneau 2 — décalé de 1.2s — effet sonar double vague */
+.service-btn.pulsing .pulse-ring-2 {
+  animation: pulse-sonar 2.4s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+  animation-delay: 1.2s;
+}

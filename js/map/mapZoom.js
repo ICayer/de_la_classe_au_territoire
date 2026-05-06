@@ -4,7 +4,7 @@
 // version 3 mai 2026
 // ==================================================
 
-import { svg, gMap, gLinks, gNodes, gBubbleCluster } from "./mapInit.js";
+import { svg, gMap, gLinks, gNodes, gBubbleCluster, gServiceButtons } from "./mapInit.js";
 import { updateBubbleCluster } from "../components/bubbleCluster.js";
 import { drawOSM } from "./mapOSM.js";
 
@@ -38,6 +38,7 @@ export function initZoom() {
   gRoot.node().appendChild(gMap.node());
   gRoot.node().appendChild(gLinks.node());
   gRoot.node().appendChild(gBubbleCluster.node());
+  gRoot.node().appendChild(gServiceButtons.node());
   gRoot.node().appendChild(gNodes.node());
   // ⚠️ gBasemap reste sur svg directement (vide) — le canvas
   // 2D gère les tuiles OSM, sans transformation SVG.

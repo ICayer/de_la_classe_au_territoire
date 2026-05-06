@@ -18,7 +18,9 @@ export let gMap;       // Couche 1 : polygones MRC
 export let gLinks;     // Couche 2 : liens réseau
 export let gNodes;          // Couche 3 : nodes personnes
 export let gBubbleCluster;  // Couche 4 : cercle TAC — suit le zoom
-export let gUI;             // Couche 5 : légende, tooltip — hors gRoot (ne zoome pas)
+export let gServiceButtons; // Couche 5
+export let gUI;             // Couche 6 : légende, tooltip — hors gRoot (ne zoome pas)
+export let gServiceModal;   // Couche 7
 
 export let projection;
 
@@ -71,7 +73,9 @@ export function initMap() {
   gLinks         = svg.append("g").attr("class", "links-layer");
   gNodes         = svg.append("g").attr("class", "nodes-layer");
   gBubbleCluster = svg.append("g").attr("class", "bubble-cluster-layer");
+  gServiceButtons = svg.append("g").attr("class", "service-buttons-layer");
   gUI            = svg.append("g").attr("class", "ui-layer");
+  gServiceModal   = svg.append("g").attr("class", "service-modal-layer");
 
   // ── PROJECTION MERCATOR ───────────────────────────
   // Initialisée sans fitExtent — calibrée dans mrcLayer.js

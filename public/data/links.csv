@@ -64,7 +64,7 @@ link_062,node_mandataire,node_mrc_982,Mandataire,Le Golfe-du-St-Laurent,2026-02-
 link_063,node_mrc_981,node_mrc_07,Minganie,La Matapédia,2025-10-02,réseautage,1
 link_064,node_mandataire,node_mrc_07,Mandataire,Le Golfe-du-St-Laurent,2026-01-07,expertise-conseil,1
 link_065,node_mrc_982,node_mrc_01,Le Golfe-du-St-Laurent,Communauté maritime des Îles-de-la-Madeleine,2026-01-07,documentation,1
-link_066,node_mandataire,node_mrc_01,Mandataire,Les Basques,2024-10-01,production,1
+link_066,node_mandataire,node_mrc_11,Mandataire,Les Basques,2024-10-01,production,1
 link_067,node_mandataire,node_mrc_01,Mandataire,La Mitis,2024-10-01,production,1
 link_068,node_mrc_09,node_mrc_11,La Mitis,Les Basques,2024-10-01,production,1
 link_069,node_mandataire,node_mrc_11,Mandataire,Kamouraska,2024-09-24,réseautage,1
@@ -87,4 +87,4 @@ link_078,node_mandataire,node_mrc_96,Mandataire,Manicouagan,2025-12-12,réseauta
 link_079,node_mrc_96,node_sci_01,Manicouagan,Pascal Bernatchez,2025-12-12,documentation,1
 link_080,node_mandataire,node_mrc_05,Mandataire,Bonaventure,2026-01-16,réseautage,1
 link_081,node_mandataire,node_mrc_982,Mandataire,Le Golfe-du-St-Laurent,2026-02-04,réseautage,1
-link_082,node_mandataire,node_mrc_01,Mandataire,La Mitis,2026-02-03,représentaton,1
+link_082,node_mandataire,node_mrc_09,Mandataire,La Mitis,2026-02-03,représentation,1

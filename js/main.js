@@ -1,6 +1,6 @@
 // ==================================================
-// js/main.js — ÉTAPE 6 : timeSlider
-// version 3 mai 2026
+// js/main.js
+// version 6 mai 2026
 // ==================================================
 
 import { loadAllData }               from "./data/dataLoader.js";
@@ -14,7 +14,9 @@ import { initTooltip }               from "./components/tooltip.js";
 import { initLegend }                from "./components/legend.js";
 import { initDonutCharts }           from "./components/donutChart.js";
 import { initBubbleCluster }         from "./components/bubbleCluster.js";
-import { initUIControls } from "./controls/uiControls.js";
+import { initUIControls }            from "./controls/uiControls.js";
+import { initServiceButtons }        from "./components/serviceButtons.js";
+import { initServiceModal }          from "./components/serviceModal.js";
 
 async function init() {
 
@@ -43,6 +45,13 @@ async function init() {
   // et APRÈS initLinksLayer() (les données de services sont disponibles)
   initDonutCharts();
 
+  // ── SERVICES ─────────────────────────────────────
+  // initServiceModal() AVANT initServiceButtons()
+  // car serviceButtons importe openServiceModal depuis serviceModal
+  // initServiceButtons() APRÈS initNodesLayer() — nodePositions doit être rempli
+  initServiceModal();
+  initServiceButtons();
+
   // ── AFFICHAGE ────────────────────────────────────
   showMRCs();
   showNodes();
@@ -53,7 +62,7 @@ async function init() {
   // car il appelle updateLinks() dès l'initialisation
   initTimeSlider();
 
-  console.log("🟢 Étape 6 terminée — timeSlider actif");
+  console.log("🟢 main : initialisation complète — services actifs");
 }
 
 init();
