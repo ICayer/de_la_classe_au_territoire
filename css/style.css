@@ -107,11 +107,12 @@ a:hover {
 }
 
 .section-intro__image {
-  width: clamp(240px, 45vw, 280px);
-  height: clamp(240px, 45vw, 280px);
+  width: clamp(240px, 45vw, 480px);
+  height: clamp(240px, 45vw, 480px);
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: var(--space-lg);
+  border: 3px solid var(--color-border);
 }
 
 .section-intro__texte {
@@ -233,6 +234,7 @@ a:hover {
   height: clamp(160px, 30vw, 280px);
   object-fit: cover;
   border-radius: 50%;
+  border: 3px solid var(--color-border);
 }
 
 .section-merci__contenu {
@@ -348,7 +350,7 @@ a:hover {
 }
 
 .logo-partenaire {
-  height: 60px;
+  height: 40px;
   width: auto;
   opacity: 0.75;
   filter: brightness(0) invert(1);
@@ -387,16 +389,14 @@ span[data-lang].visible { display: inline; }
 
 #legend-panel {
   position:   absolute;
-  bottom:     calc(var(--timeline-height) + 8px);
-  right:      8px;
+  bottom:     calc(var(--timeline-height) + 16px);
+  right:      44px;
   z-index:    90;
   background: rgba(20, 18, 16, 0.88);
   border:     1px solid rgba(255,255,255,0.1);
   border-radius: var(--radius-md);
   padding:    10px 14px;
   min-width:  190px;
-  max-height: calc(var(--vis-height) - 56px); /* ne dépasse jamais la zone carte */
-  overflow-y: auto;
   font-family: var(--font-body);
   backdrop-filter: blur(4px);
 }
@@ -405,8 +405,22 @@ span[data-lang].visible { display: inline; }
   font-size:     0.72rem;
   text-transform:uppercase;
   letter-spacing:0.08em;
-  color:         rgba(255,255,255,0.4);
+  color:         rgba(255,255,255,0.6);
   margin-bottom: 8px;
+}
+
+.legend-title--sub {
+  font-size:     0.60rem;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  color:         rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+  margin-top:    4px;
+  padding-left:  10px;
+}
+
+.legend-title--sub ~ .legend-item {
+  padding-left: 10px;
 }
 
 .legend-item {

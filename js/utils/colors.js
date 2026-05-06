@@ -69,7 +69,7 @@ export const COLOR_SERVICES = {
   // ── Services de connaissance ───────────────────
   "documentation":     "#08ad52",   // menthe clair
   "production":        "#78d309",   // teal franc
-  "formation":         "#518f30",   // teal profond
+  "formation":         "#32790b",   // teal profond
 };
 
 // --------------------------------------------------

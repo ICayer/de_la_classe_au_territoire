@@ -3,7 +3,7 @@
 // Légende B (bas droite, toujours visible)
 // + Panneau C (instructions, s'ouvre au clic ?)
 // Bilingue via i18n.js
-// version 3 mai 2026
+// version 6 mai 2026
 // ==================================================
 
 import { t } from "../utils/i18n.js";
@@ -167,49 +167,80 @@ function buildLegend() {
   servicesTitle.textContent = t("tooltip.services");
   legend.appendChild(servicesTitle);
 
-  Object.entries(COLOR_SERVICES).forEach(([key, color]) => {
-    const item = document.createElement("div");
-    item.className = "legend-item";
+  // Services groupés : Relations (représentation, réseautage, expertise-conseil)
+  // puis Connaissances (documentation, production, formation)
+  const SERVICE_GROUPS = [
+    {
+      cat:  "service.cat.relations",
+      keys: ["représentation", "réseautage", "expertise-conseil"]
+    },
+    {
+      cat:  "service.cat.connaissances",
+      keys: ["documentation", "production", "formation"]
+    }
+  ];
 
-    // Arc SVG représentant un segment de donut
-    const svgNS = "http://www.w3.org/2000/svg";
-    const svg   = document.createElementNS(svgNS, "svg");
-    svg.setAttribute("width",   "28");
-    svg.setAttribute("height",  "28");
-    svg.setAttribute("viewBox", "0 0 28 28");
-    svg.style.flexShrink = "0";
+  SERVICE_GROUPS.forEach((group, gi) => {
 
-    // Arc de 120° centré en haut
-    const path = document.createElementNS(svgNS, "path");
-    const r1 = 7, r2 = 13, cx = 14, cy = 14;
-    const startAngle = -Math.PI / 2 - Math.PI / 3;
-    const endAngle   = -Math.PI / 2 + Math.PI / 3;
-    const x1o = cx + r2 * Math.cos(startAngle);
-    const y1o = cy + r2 * Math.sin(startAngle);
-    const x2o = cx + r2 * Math.cos(endAngle);
-    const y2o = cy + r2 * Math.sin(endAngle);
-    const x1i = cx + r1 * Math.cos(endAngle);
-    const y1i = cy + r1 * Math.sin(endAngle);
-    const x2i = cx + r1 * Math.cos(startAngle);
-    const y2i = cy + r1 * Math.sin(startAngle);
-    const d = [
-      `M ${x1o} ${y1o}`,
-      `A ${r2} ${r2} 0 0 1 ${x2o} ${y2o}`,
-      `L ${x1i} ${y1i}`,
-      `A ${r1} ${r1} 0 0 0 ${x2i} ${y2i}`,
-      "Z"
-    ].join(" ");
-    path.setAttribute("d",    d);
-    path.setAttribute("fill", color);
-    path.setAttribute("opacity", "0.92");
-    svg.appendChild(path);
+    // Séparateur entre les deux groupes (sauf avant le premier)
+    if (gi > 0) {
+      const sepG = document.createElement("div");
+      sepG.className = "legend-sep";
+      legend.appendChild(sepG);
+    }
 
-    const label = document.createElement("span");
-    label.textContent = t(`service.${key}`);
+    // Sous-titre de groupe
+    const groupTitle = document.createElement("p");
+    groupTitle.className = "legend-title legend-title--sub";
+    groupTitle.textContent = t(group.cat);
+    legend.appendChild(groupTitle);
 
-    item.appendChild(svg);
-    item.appendChild(label);
-    legend.appendChild(item);
+    group.keys.forEach(key => {
+      const color = COLOR_SERVICES[key];
+      if (!color) return;
+
+      const item = document.createElement("div");
+      item.className = "legend-item";
+
+      // Arc SVG représentant un segment de donut
+      const svgNS = "http://www.w3.org/2000/svg";
+      const svg   = document.createElementNS(svgNS, "svg");
+      svg.setAttribute("width",   "28");
+      svg.setAttribute("height",  "28");
+      svg.setAttribute("viewBox", "0 0 28 28");
+      svg.style.flexShrink = "0";
+
+      const path = document.createElementNS(svgNS, "path");
+      const r1 = 7, r2 = 13, cx = 14, cy = 14;
+      const startAngle = -Math.PI / 2 - Math.PI / 3;
+      const endAngle   = -Math.PI / 2 + Math.PI / 3;
+      const x1o = cx + r2 * Math.cos(startAngle);
+      const y1o = cy + r2 * Math.sin(startAngle);
+      const x2o = cx + r2 * Math.cos(endAngle);
+      const y2o = cy + r2 * Math.sin(endAngle);
+      const x1i = cx + r1 * Math.cos(endAngle);
+      const y1i = cy + r1 * Math.sin(endAngle);
+      const x2i = cx + r1 * Math.cos(startAngle);
+      const y2i = cy + r1 * Math.sin(startAngle);
+      const d = [
+        `M ${x1o} ${y1o}`,
+        `A ${r2} ${r2} 0 0 1 ${x2o} ${y2o}`,
+        `L ${x1i} ${y1i}`,
+        `A ${r1} ${r1} 0 0 0 ${x2i} ${y2i}`,
+        "Z"
+      ].join(" ");
+      path.setAttribute("d",    d);
+      path.setAttribute("fill", color);
+      path.setAttribute("opacity", "0.92");
+      svg.appendChild(path);
+
+      const label = document.createElement("span");
+      label.textContent = t(`service.${key}`);
+
+      item.appendChild(svg);
+      item.appendChild(label);
+      legend.appendChild(item);
+    });
   });
 
   // Attacher au viz-wrapper si disponible, sinon au body (fallback)
@@ -265,3 +296,9 @@ function buildInfoPanel() {
   const container = document.getElementById("viz-wrapper") || document.body;
   container.appendChild(panel);
 }
+// NOTE CSS à ajouter dans style.css :
+// .legend-title--sub {
+//   color: rgba(255,255,255,0.25);   /* plus discret que le titre principal */
+//   margin-top: 4px;
+//   font-size: 0.65rem;
+// }

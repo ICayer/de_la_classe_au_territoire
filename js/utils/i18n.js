@@ -36,12 +36,12 @@ const translations = {
     "tooltip.service.many": "services",
 
     // ── Légende ────────────────────────────────────
-    "legend.title":           "Catégories",
+    "legend.title":           "Personnages",
     "legend.mandataire":      "Mandataire",
     "legend.beneficiaire":    "Bénéficiaire",
     "legend.scientifique":    "Scientifique",
     "legend.partenaire":      "Partenaire",
-    "legend.relationsTitle":  "Relations",
+    "legend.relationsTitle":  "Liens",
 
     // ── Bubble cluster ─────────────────────────────
     "cluster.label":    "Communauté TAC",
@@ -54,6 +54,10 @@ const translations = {
     "service.réseautage":       "Réseautage",
     "service.production":       "Production",
     "service.formation":        "Formation",
+
+    // ── Sous-catégories de services ────────────────
+    "service.cat.relations":     "Relations",
+    "service.cat.connaissances": "Connaissances",
 
     // ── Légende — liens ───────────────────────────
     "legend.linkPrimary":   "Mandataire ↔ MRC / partenaire",
@@ -68,7 +72,7 @@ const translations = {
     "info.close":          "Fermer",
     "info.howToRead":      "Navigation",
     "info.linkReading":    "Lire les liens",
-    "info.tip.hover":      "Survoler un node → nom, catégorie et services",
+    "info.tip.hover":      "Survoler une personne → nom, catégorie et services",
     "info.tip.hoverLink":  "Survoler un lien → détail des services échangés",
     "info.tip.zoom":       "Molette de la souris → zoom avant / arrière",
     "info.tip.pan":        "Cliquer-glisser → déplacer la carte",
@@ -112,12 +116,12 @@ const translations = {
     "tooltip.service.many": "services",
 
     // ── Légende ────────────────────────────────────
-    "legend.title":           "Categories",
+    "legend.title":           "Character",
     "legend.mandataire":      "Mandatary",
     "legend.beneficiaire":    "Beneficiary",
     "legend.scientifique":    "Scientist",
     "legend.partenaire":      "Partner",
-    "legend.relationsTitle":  "Relations",
+    "legend.relationsTitle":  "Links",
 
     // ── Bubble cluster ─────────────────────────────
     "cluster.label":    "TCA Community",
@@ -130,6 +134,10 @@ const translations = {
     "service.réseautage":       "Networking",
     "service.production":       "Production",
     "service.formation":        "Training",
+
+    // ── Service sub-categories ─────────────────────
+    "service.cat.relations":     "Relationships",
+    "service.cat.connaissances": "Knowledge",
 
     // ── Légende — liens ───────────────────────────
     "legend.linkPrimary":   "Mandataire ↔ MRC / partenaire",
@@ -144,7 +152,7 @@ const translations = {
     "info.close":          "Fermer",
     "info.howToRead":      "Navigation",
     "info.linkReading":    "Lire les liens",
-    "info.tip.hover":      "Survoler un node → nom, catégorie et services",
+    "info.tip.hover":      "Survoler un personnage → nom, catégorie et services",
     "info.tip.hoverLink":  "Survoler un lien → détail des services échangés",
     "info.tip.zoom":       "Molette de la souris → zoom avant / arrière",
     "info.tip.pan":        "Cliquer-glisser → déplacer la carte",
@@ -165,7 +173,7 @@ const translations = {
     "info.close":          "Close",
     "info.howToRead":      "Navigation",
     "info.linkReading":    "Reading links",
-    "info.tip.hover":      "Hover a node → name, category and services",
+    "info.tip.hover":      "Hover character → name, category and services",
     "info.tip.hoverLink":  "Hover a link → services exchanged",
     "info.tip.zoom":       "Mouse wheel → zoom in / out",
     "info.tip.pan":        "Click and drag → move the map",

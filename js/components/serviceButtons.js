@@ -152,7 +152,7 @@ export function initServiceButtons() {
 // --------------------------------------------------
  
 export function updateServiceButtons(dateActive) {
- 
+ console.log("k =", currentK, "scale =", Math.pow(1 / (currentK || 1), 0.6));
   // S'assurer que gServiceButtons est le dernier enfant de gRoot
   // → visuellement au-dessus des donuts (qui sont dans gNodes)
   gServiceButtons.raise();
