@@ -37,34 +37,34 @@ const translations = {
 
     // ── Légende ────────────────────────────────────
     "legend.title":           "Personnages",
-    "legend.mandataire":      "Mandataire",
-    "legend.beneficiaire":    "Bénéficiaire",
+    "legend.mandataire":      "Ah Caramel!",
+    "legend.beneficiaire":    "Collaborateur·trice",
     "legend.scientifique":    "Scientifique",
     "legend.partenaire":      "Partenaire",
     "legend.relationsTitle":  "Liens",
 
     // ── Bubble cluster ─────────────────────────────
     "cluster.label":    "Communauté TAC",
-    "cluster.sublabel": "Scientifiques & mandataire",
+    "cluster.sublabel": "Scientifiques & Ah Caramel!",
 
     // ── Services ───────────────────────────────────
     "service.documentation":    "Documentation",
-    "service.expertise-conseil":"Expertise-conseil",
+    "service.expertise-conseil":"Conseil",
     "service.représentation":   "Représentation",
     "service.réseautage":       "Réseautage",
     "service.production":       "Production",
-    "service.formation":        "Formation",
+    "service.formation":        "Scénarisation pédagogique",
 
     // ── Sous-catégories de services ────────────────
     "service.cat.relations":     "Relations",
     "service.cat.connaissances": "Connaissances",
 
     // ── Légende — liens ───────────────────────────
-    "legend.linkPrimary":   "Mandataire ↔ MRC / partenaire",
+    "legend.linkPrimary":   "Ah Caramel! ↔ MRC / partenaire",
     "legend.linkSecondary": "MRC ↔ scientifique",
-    "legend.linkCluster":  "Mandataire ↔ Scientifique",
-    "legend.linkExternal": "TAC ↔ Bénéficiaire",
-    "legend.linkBB":       "Bénéficiaire ↔ Bénéficiaire",
+    "legend.linkCluster":  "Ah Caramel! ↔ Scientifique",
+    "legend.linkExternal": "TAC ↔ Collaborateur·trice",
+    "legend.linkBB":       "Collaborateur·trice ↔ Collaborateur·trice",
 
     // ── Panneau info ───────────────────────────────
     "info.btnLabel":       "Aide et légende",
@@ -79,9 +79,9 @@ const translations = {
     "info.tip.slider":     "Glisser le curseur → explorer dans le temps",
     "info.tip.play":       "Bouton ▶ → animation automatique jan 2024–2030",
    "info.link.thickness": "Épaisseur du lien = nombre de services rendus",
-    "info.link.cluster":   "Lien pointillé = relation Mandataire ↔ Scientifique",
-    "info.link.external":  "Lien gris pâle = relation TAC ↔ Bénéficiaire",
-    "info.link.bb":        "Lien gris foncé = relation Bénéficiaire ↔ Bénéficiaire",
+    "info.link.cluster":   "Lien pointillé = relation Ah Caramel! ↔ Scientifique",
+    "info.link.external":  "Lien gris pâle = relation TAC ↔ Collaborateur·trice",
+    "info.link.bb":        "Lien gris foncé = relation Collaborateur·trice ↔ Collaborateur·trice",
 
     // ── Mois courts (pour D3 timeFormatLocale) ─────
     "months.short": [
@@ -117,55 +117,34 @@ const translations = {
 
     // ── Légende ────────────────────────────────────
     "legend.title":           "Character",
-    "legend.mandataire":      "Mandatary",
-    "legend.beneficiaire":    "Beneficiary",
+    "legend.mandataire":      "Ah Caramel!",
+    "legend.beneficiaire":    "Collaborator",
     "legend.scientifique":    "Scientist",
     "legend.partenaire":      "Partner",
     "legend.relationsTitle":  "Links",
 
     // ── Bubble cluster ─────────────────────────────
     "cluster.label":    "TCA Community",
-    "cluster.sublabel": "Scientists & mandatary",
+    "cluster.sublabel": "Scientists & Ah Caramel!",
 
     // ── Services ───────────────────────────────────
     "service.documentation":    "Documentation",
-    "service.expertise-conseil":"Expertise & advice",
+    "service.expertise-conseil":"Consulting",
     "service.représentation":   "Representation",
     "service.réseautage":       "Networking",
     "service.production":       "Production",
-    "service.formation":        "Training",
+    "service.formation":        "Educational scripting",
 
     // ── Service sub-categories ─────────────────────
     "service.cat.relations":     "Relationships",
     "service.cat.connaissances": "Knowledge",
 
     // ── Légende — liens ───────────────────────────
-    "legend.linkPrimary":   "Mandataire ↔ MRC / partenaire",
-    "legend.linkSecondary": "MRC ↔ scientifique",
-    "legend.linkCluster":  "Mandatary ↔ Scientist",
-    "legend.linkExternal": "TAC ↔ Beneficiary",
-    "legend.linkBB":       "Beneficiary ↔ Beneficiary",
-
-    // ── Panneau info ───────────────────────────────
-    "info.btnLabel":       "Aide et légende",
-    "info.title":          "Comment explorer cette carte",
-    "info.close":          "Fermer",
-    "info.howToRead":      "Navigation",
-    "info.linkReading":    "Lire les liens",
-    "info.tip.hover":      "Survoler un personnage → nom, catégorie et services",
-    "info.tip.hoverLink":  "Survoler un lien → détail des services échangés",
-    "info.tip.zoom":       "Molette de la souris → zoom avant / arrière",
-    "info.tip.pan":        "Cliquer-glisser → déplacer la carte",
-    "info.tip.slider":     "Glisser le curseur → explorer dans le temps",
-    "info.tip.play":       "Bouton ▶ → animation automatique jan 2024–2030",
-    "info.link.thickness": "Link thickness = number of services rendered",
-    "info.link.cluster":   "Dashed link = Mandatary ↔ Scientist relationship",
-    "info.link.external":  "Light grey link = TAC ↔ Beneficiary relationship",
-    "info.link.bb":        "Dark grey link = Beneficiary ↔ Beneficiary relationship",
-
-    // ── Légende — liens ───────────────────────────
-    "legend.linkPrimary":   "Mandatary ↔ MRC / partner",
+    "legend.linkPrimary":   "Ah Caramel! ↔ MRC / partner",
     "legend.linkSecondary": "MRC ↔ scientist",
+    "legend.linkCluster":  "Ah Caramel! ↔ Scientist",
+    "legend.linkExternal": "TAC ↔ Collaborator",
+    "legend.linkBB":       "Collaborator ↔ Collaborator",
 
     // ── Panneau info ───────────────────────────────
     "info.btnLabel":       "Help and legend",
@@ -180,8 +159,11 @@ const translations = {
     "info.tip.slider":     "Drag the cursor → explore through time",
     "info.tip.play":       "▶ button → auto-play Jan 2024–2030",
     "info.link.thickness": "Link thickness = number of services rendered",
+    "info.link.cluster":   "Dashed link = Ah Caramel! ↔ Scientist relationship",
+    "info.link.external":  "Light grey link = TAC ↔ Collaborator relationship",
+    "info.link.bb":        "Dark grey link = Collaborator ↔ Collaborator relationship",
     "info.link.amber":     "Golden link = MRC ↔ scientist relationship",
-    "info.link.white":     "White link = relationship with the mandatary",
+    "info.link.white":     "White link = relationship with the Ah Caramel!",
 
     // ── Mois courts (pour D3 timeFormatLocale) ─────
     "months.short": [

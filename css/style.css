@@ -99,31 +99,59 @@ a:hover {
 
 .section-intro__titre {
   font-family: var(--font-display);
-  font-size: var(--size-h1);
+  font-size: clamp(1.96rem, 4.2vw, 3.85rem); /* -30% vs --size-h1 */
   line-height: var(--leading-tight);
   color: var(--color-ink);
+  margin-bottom: var(--space-sm);
+  max-width: 800px;
+}
+
+.section-intro__sous-titre {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: clamp(2.4rem, 4vw, 3rem); /* +100% vs --size-h3 */
+  line-height: var(--leading-tight);
+  color: var(--color-ink-muted);
   margin-bottom: var(--space-lg);
   max-width: 800px;
 }
 
 .section-intro__image {
-  width: clamp(240px, 45vw, 480px);
-  height: clamp(240px, 45vw, 480px);
+  width: clamp(120px, 22.5vw, 240px);
+  height: clamp(120px, 22.5vw, 240px);
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: var(--space-lg);
-  border: 3px solid var(--color-border);
 }
 
 .section-intro__texte {
   max-width: var(--max-width);
-  font-size: var(--size-body);
+  font-size: 1.4rem;
   line-height: var(--leading-body);
   color: var(--color-ink-muted);
 }
 
 .section-intro__texte p + p {
   margin-top: var(--space-sm);
+}
+
+/* Citation finale de l'intro — calquée sur .sp-quote des fiches service */
+.intro-quote {
+  border-left: 4px solid var(--color-accent-warm);
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-lg) auto 0;
+  max-width: var(--max-width);
+  background: var(--color-bg-alt);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  text-align: left;
+}
+
+.intro-quote p {
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: var(--leading-body);
+  color: var(--color-ink);
+  margin: 0;
 }
 
 /* Vidéo de présentation */
@@ -249,8 +277,7 @@ a:hover {
   width: clamp(160px, 30vw, 280px);
   height: clamp(160px, 30vw, 280px);
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid var(--color-border);
+
 }
 
 .section-merci__contenu {
