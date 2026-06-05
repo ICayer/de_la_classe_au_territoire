@@ -44,9 +44,9 @@ export const COLOR_BUBBLE_STROKE = "#85B7EB";                     // Blue 200
 // --------------------------------------------------
 
 export const COLOR_MRC_REGIONS = {
-  "Bas-Saint-Laurent":              "#7bf0de",  // Gray 100 — le plus clair (sud)
-  "Gaspésie–Îles-de-la-Madeleine": "#89caf3",  // Gray 200 — intermédiaire
-  "Côte-Nord":                      "#648bd1",  // Gray 400 — le plus foncé (nord)
+  "Bas-Saint-Laurent":              "#d0f0eb",  // Gray 100 — le plus clair (sud)
+  "Gaspésie–Îles-de-la-Madeleine": "#c8e2f3",  // Gray 200 — intermédiaire
+  "Côte-Nord":                      "#becfee",  // Gray 400 — le plus foncé (nord)
 };
 
 export const COLOR_MRC_FILL         = "#a9b3b4";  // fallback Gray 200
@@ -62,15 +62,17 @@ export const COLOR_MRC_STROKE_WIDTH = 0.8;
 
 export const COLOR_SERVICES = {
   // ── Services relationnels ──────────────────────
-  "réseautage":        "#f3ae23",   // rose pâle clair
-  "représentation":    "#cf2931",   // framboise franc
-  "expertise-conseil": "#9a075a",   // prune foncé
+  "représentation":    "#f3c623",   // rose pâle clair
+  "réseautage":        "#ef444d",   // framboise franc
+  "expertise-conseil": "#c60472",   // prune foncé
 
   // ── Services de connaissance ───────────────────
-  "documentation":     "#08ad52",   // menthe clair
-  "production":        "#61ad05",   // teal franc
-  "formation":         "#32790b",   // teal profond
+  "documentation":     "#56d6e7",   // bleu clair
+  "production":        "#1ba4da",   // bleu médian
+  "formation":         "#1c65a4",   // bleu foncé
 };
+
+
 
 // --------------------------------------------------
 // LIENS — styles par type de relation
