@@ -171,11 +171,19 @@
 }
 
 .sp-title {
-  font-size:   1.35rem;
+  font-size:   1.5rem;
   font-weight: 600;
   line-height: 1.35;
   color:       #ffffff;
   max-width:   640px;
+}
+
+.sp-keywords {
+  margin: 6px 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.65;
 }
 
 /* ── CORPS ── */
@@ -196,7 +204,7 @@
 }
 
 .sp-section-title {
-  font-size:     0.78rem;
+  font-size:     1.3rem;
   font-weight:   700;
   text-transform:uppercase;
   letter-spacing:0.1em;
@@ -210,7 +218,7 @@
 }
 
 .sp-section p {
-  font-size:   0.9rem;
+  font-size:   1.1rem;
   line-height: 1.7;
   color:       rgba(30, 29, 27, 0.75);
 }

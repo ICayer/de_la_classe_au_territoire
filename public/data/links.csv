@@ -1,90 +1,75 @@
-﻿id,source,target,source_label,target_label,date,service,poids
-link_001,node_mandataire,node_mrc_06,Mandataire,Avignon,2024-07-11,réseautage,1
-link_002,node_mandataire,node_mrc_08,Mandataire,La Matanie,2024-09-09,réseautage,1
-link_003,node_mandataire,node_mrc_01,Mandataire,Communauté maritime des Îles-de-la-Madeleine,2024-09-09,réseautage,1
-link_004,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-09-10,réseautage,1
-link_005,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-09-10,réseautage,1
-link_006,node_mandataire,node_mrc_11,Mandataire,Les Basques,2025-09-13,réseautage,1
-link_007,node_mandataire,node_coll_04,Mandataire,Collectif régional de développement du BSL,2025-09-19,réseautage,1
-link_008,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-23,réseautage,1
-link_009,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2024-09-24,réseautage,1
-link_010,node_mandataire,node_mrc_01,Mandataire,Communauté maritime des Îles-de-la-Madeleine,2024-09-09,documentation,1
-link_011,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2024-09-19,expertise-conseil,1
-link_012,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-24,documentation,1
-link_013,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-24,expertise-conseil,1
-link_014,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2024-09-24,représentation,1
-link_015,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-24,réseautage,1
-link_016,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-26,réseautage,1
-link_017,node_mandataire,node_mrc_971,Mandataire,Sept-Rivières,2024-09-30,expertise-conseil,1
-link_018,node_mandataire,node_mrc_11,Mandataire,Les Basques,2024-10-01,production,1
-link_019,node_mandataire,node_mrc_12,Mandataire,Rivière-du-Loup,2024-10-04,expertise-conseil,1
+id,source,target,source_label,target_label,date,service,poids
+link_001,node_mandataire,node_mandataire,Mandataire,Mandataire,2024-06-19,documentation,1
+link_002,node_mandataire,node_mrc_06,Mandataire,Avignon,2024-07-11,représentation,1
+link_003,node_mandataire,node_mrc_08,Mandataire,La Matanie,2024-09-09,représentation,1
+link_004,node_mandataire,node_mrc_01,Mandataire,Communauté maritime des Îles-de-la-Madeleine,2024-09-09,représentation,1
+link_005,node_mandataire,node_mrc_01,Mandataire,Communauté maritime des Îles-de-la-Madeleine,2024-09-09,documentation,1
+link_006,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2024-09-10,représentation,1
+link_007,node_mandataire,node_mrc_11,Mandataire,Les Basques,2024-09-13,représentation,1
+link_008,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-23,représentation,1
+link_009,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2024-09-24,représentation,1
+link_010,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-24,documentation,1
+link_011,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-24,réseautage,1
+link_012,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2024-09-24,représentation,1
+link_013,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-24,réseautage,1
+link_014,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2024-09-26,réseautage,1
+link_015,node_mrc_14,node_sci_01,Kamouraska,Pascal Bernatchez,2024-09-26,expertise-conseil,1
+link_016,node_mandataire,node_mrc_11,Mandataire,Les Basques,2024-10-01,production,1
+link_017,node_mandataire,node_mrc_09,Mandataire,La Mitis,2024-10-01,production,1
+link_018,node_mrc_09,node_mrc_11,La Mitis,Les Basques,2024-10-01,production,1
+link_019,node_mandataire,node_mrc_12,Mandataire,Rivière-du-Loup,2024-10-04,production,1
 link_020,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2024-10-07,expertise-conseil,1
-link_021,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2024-10-24,représentation,1
-link_022,node_mandataire,node_mrc_971,Mandataire,Sept-Rivières,2024-10-28,représentation,1
-link_023,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2024-11-05,expertise-conseil,1
-link_024,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2024-11-05,réseautage,1
-link_025,node_mandataire,node_mrc_03,Mandataire,La Côte-de-Gaspé,2024-11-19,représentation,1
-link_026,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2024-11-19,expertise-conseil,1
-link_027,node_mandataire,node_mrc_00,Mandataire,Agglomération de Québec,2024-12-09,expertise-conseil,1
-link_028,node_mandataire,node_mrc_00,Mandataire,Matawinie,2025-01-31,production,1
-link_029,node_mandataire,node_mrc_00,Mandataire,Etchemins,2025-01-31,production,1
-link_030,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-02-07,réseautage,1
-link_031,node_mandataire,node_mrc_03,Mandataire,La Côte-de-Gaspé,2025-04-02,représentation,1
-link_032,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-03-12,expertise-conseil,1
-link_033,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-05-20,expertise-conseil,1
-link_034,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-05-20,expertise-conseil,1
-link_035,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-10-29,expertise-conseil,1
-link_036,node_mandataire,node_mrc_971,Mandataire,Sept-Rivières,2025-05-27,représentation,1
-link_037,node_mandataire,node_mrc_05,Mandataire,Bonaventure,2025-04-04,représentation,1
-link_038,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-06-05,représentation,1
-link_039,node_mandataire,node_mrc_06,Mandataire,Avignon,2025-06-11,expertise-conseil,1
-link_040,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-06-12,représentation,1
-link_041,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-06-12,documentation,1
-link_042,node_mandataire,node_mrc_02,Mandataire,Le Rocher-Percé,2025-06-16,réseautage,1
-link_043,node_mandataire,node_mrc_05,Mandataire,Bonaventure,2025-07-16,représentation,1
-link_044,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-09-04,expertise-conseil,1
-link_045,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-09-18,réseautage,1
-link_046,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-09-23,formation,1
-link_047,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2025-09-29,expertise-conseil,1
-link_048,node_mandataire,node_mrc_971,Mandataire,Sept-Rivières,2025-09-29,représentation,1
-link_049,node_mandataire,node_mrc_981,Mandataire,Minganie,2025-10-01,expertise-conseil,1
-link_050,node_mandataire,node_mrc_971,Mandataire,Sept-Rivières,2025-10-09,réseautage,1
-link_051,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-10-15,documentation,1
-link_052,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-10-27,documentation,1
-link_053,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-10-27,représentation,1
-link_054,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-10-27,expertise-conseil,1
-link_055,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-11-05,expertise-conseil,1
-link_056,node_mandataire,node_mrc_96,Mandataire,Manicouagan,2025-11-26,expertise-conseil,1
+link_021,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2024-11-05,expertise-conseil,1
+link_022,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2024-11-05,réseautage,1
+link_023,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2024-11-19,expertise-conseil,1
+link_024,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-02-07,réseautage,1
+link_025,node_mrc_10,node_sci_02,Rimouski-Neigette,Gwénaëlle Chaillou,2025-02-07,expertise-conseil,1
+link_026,node_mandataire,node_sci_05,Mandataire,Dany Dumont,2025-02-07,réseautage,1
+link_027,node_mrc_10,node_sci_05,Rimouski-Neigette,Dany Dumont,2025-02-07,expertise-conseil,1
+link_028,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-03-12,expertise-conseil,1
+link_029,node_mandataire,node_mrc_05,Mandataire,Avignon,2025-04-02,représentation,1
+link_030,node_mrc_07,node_sci_07,Mandataire,Philippe Kaboré,2025-04-16,expertise-conseil,1
+link_031,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-05-20,représentation,1
+link_032,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-05-20,représentation,1
+link_033,node_mandataire,node_mrc_05,Mandataire,Bonaventure,2025-06-04,représentation,1
+link_034,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-06-05,représentation,1
+link_035,node_mandataire,node_mrc_06,Mandataire,Avignon,2025-06-11,expertise-conseil,1
+link_036,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-06-12,représentation,1
+link_037,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-06-12,documentation,1
+link_038,node_mandataire,node_mrc_02,Mandataire,Le Rocher-Percé,2025-06-16,réseautage,1
+link_039,node_mrc_02,node_sci_01,Le Rocher-Percé,Pascal Bernatchez,2025-06-16,réseautage,1
+link_040,node_mandataire,node_mrc_05,Mandataire,Bonaventure,2025-07-16,représentation,1
+link_041,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-09-04,expertise-conseil,1
+link_042,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-09-18,formation,1
+link_043,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-09-23,formation,1
+link_044,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2025-09-29,expertise-conseil,1
+link_045,node_mandataire,node_mrc_981,Mandataire,Minganie,2025-10-01,expertise-conseil,1
+link_046,node_mrc_981,node_mrc_07,Minganie,La Matapédia,2025-10-02,réseautage,1
+link_047,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-10-15,documentation,1
+link_048,node_mandataire,node_sci_03,Mandataire,Nicolas Devaux,2025-10-25,réseautage,1
+link_049,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-10-27,documentation,1
+link_050,node_mandataire,node_mrc_09,Mandataire,La Mitis,2025-10-27,représentation,1
+link_051,node_mandataire,node_sci_08,Mandataire,Thomas Buffin-Bélanger,2025-10-27,documentation,1
+link_052,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-10-27,expertise-conseil,1
+link_053,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-10-29,expertise-conseil,1
+link_054,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-11-05,expertise-conseil,1
+link_055,node_mandataire,node_sci_04,Mandataire,Lucie Morin,2025-11-06,réseautage,1
+link_056,node_mrc_10,node_sci_04,Rimouski-Neigette,Lucie Morin,2025-11-06,formation,1
 link_057,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-12-02,expertise-conseil,1
 link_058,node_mandataire,node_mrc_982,Mandataire,Le Golfe-du-St-Laurent,2025-12-03,documentation,1
 link_059,node_mandataire,node_mrc_96,Mandataire,Manicouagan,2025-12-12,réseautage,1
-link_060,node_mandataire,node_mrc_05,Mandataire,Bonaventure,2026-01-15,réseautage,1
-link_061,node_mandataire,node_mrc_12,Mandataire,Rivière-du-Loup,2026-01-19,réseautage,1
-link_062,node_mandataire,node_mrc_982,Mandataire,Le Golfe-du-St-Laurent,2026-02-04,réseautage,1
-link_063,node_mrc_981,node_mrc_07,Minganie,La Matapédia,2025-10-02,réseautage,1
-link_064,node_mandataire,node_mrc_07,Mandataire,Le Golfe-du-St-Laurent,2026-01-07,expertise-conseil,1
-link_065,node_mrc_982,node_mrc_01,Le Golfe-du-St-Laurent,Communauté maritime des Îles-de-la-Madeleine,2026-01-07,documentation,1
-link_066,node_mandataire,node_mrc_11,Mandataire,Les Basques,2024-10-01,production,1
-link_067,node_mandataire,node_mrc_01,Mandataire,La Mitis,2024-10-01,production,1
-link_068,node_mrc_09,node_mrc_11,La Mitis,Les Basques,2024-10-01,production,1
-link_069,node_mandataire,node_mrc_11,Mandataire,Kamouraska,2024-09-24,réseautage,1
-link_070,node_mrc_14,node_sci_01,Kamouraska,Pascal Bernatchez,2024-09-24,expertise-conseil,1
-link_071,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-02-07,réseautage,1
-link_072,node_mrc_10,node_sci_01,Rimouski-Neigette,Pascal Bernatchez,2025-02-07,expertise-conseil,1
-link_073,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2025-02-07,réseautage,1
-link_074,node_mrc_10,node_sci_02,Rimouski-Neigette,Gwénaëlle Chaillou,2025-02-07,expertise-conseil,1
-link_075,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2025-05-20,réseautage,1
-link_076,node_mrc_07,node_sci_07,La Matapédia,Philippe Kaboré,2025-05-20,expertise-conseil,1
-link_070,node_mandataire,node_sci_03,Mandataire,Nicolas Devaux,2025-10-25,réseautage,1
-link_071,node_mrc_02,node_sci_01,Le Rocher-Percé,Pascal Bernatchez,2025-06-16,réseautage,1
-link_072,node_mandataire,node_sci_04,Mandataire,Lucie Morin,2025-11-06,réseautage,1
-link_073,node_mrc_10,node_sci_04,Rimouski-Neigette,Lucie Morin,2025-11-06,formation,1
-link_074,node_mandataire,node_sci_05,Mandataire,Dany Dumont,2025-02-07,réseautage,1
-link_075,node_mrc_10,node_sci_05,Rimouski-Neigette,Dany Dumont,2025-02-07,expertise-conseil,1
-link_076,node_mandataire,node_mrc_11,Mandataire,La Mitis,2025-10-27,réseautage,1
-link_077,node_mandataire,node_sci_08,Mandataire,Thomas Buffin-Bélanger,2025-10-27,documentation,1
-link_078,node_mandataire,node_mrc_96,Mandataire,Manicouagan,2025-12-12,réseautage,1
-link_079,node_mrc_96,node_sci_01,Manicouagan,Pascal Bernatchez,2025-12-12,documentation,1
-link_080,node_mandataire,node_mrc_05,Mandataire,Bonaventure,2026-01-16,réseautage,1
-link_081,node_mandataire,node_mrc_982,Mandataire,Le Golfe-du-St-Laurent,2026-02-04,réseautage,1
-link_082,node_mandataire,node_mrc_09,Mandataire,La Mitis,2026-02-03,représentation,1
+link_060,node_mrc_96,node_sci_01,Manicouagan,Pascal Bernatchez,2025-12-12,documentation,1
+link_061,node_mandataire,node_mrc_07,Mandataire,Le Golfe-du-St-Laurent,2026-01-07,expertise-conseil,1
+link_062,node_mrc_982,node_mrc_01,Le Golfe-du-St-Laurent,Communauté maritime des Îles-de-la-Madeleine,2026-01-07,documentation,1
+link_063,node_mandataire,node_mrc_05,Mandataire,Bonaventure,2026-01-15,réseautage,1
+link_064,node_mandataire,node_mrc_12,Mandataire,Rivière-du-Loup,2026-01-19,réseautage,1
+link_065,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2026-01-19,formation,1
+link_066,node_mandataire,node_mrc_09,Mandataire,La Mitis,2026-02-03,représentation,1
+link_067,node_mandataire,node_mrc_982,Mandataire,Le Golfe-du-St-Laurent,2026-02-04,réseautage,1
+link_068,node_mandataire,node_mrc_11,Mandataire,Les Basques,2026-02-18,réseautage,1
+link_069,node_mandataire,node_mrc_12,Mandataire,Rimouski-Neigette,2026-05-06,expertise-conseil,1
+link_070,node_mandataire,node_mrc_09,Mandataire,La Mitis,2026-05-07,réseautage,1
+link_071,node_mandataire,node_mrc_12,Mandataire,Rimouski-Neigette,2026-05-08,expertise-conseil,1
+link_072,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2026-06-11,représentation,1
+link_073,node_mandataire,node_mrc_08,Mandataire,La Matanie,2026-06-09,représentation,1
+link_074,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2026-06-02,expertise-conseil,1
