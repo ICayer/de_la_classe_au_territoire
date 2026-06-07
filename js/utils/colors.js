@@ -61,15 +61,15 @@ export const COLOR_MRC_STROKE_WIDTH = 0.8;
 // --------------------------------------------------
 
 export const COLOR_SERVICES = {
-  // ── Services relationnels ──────────────────────
-  "représentation":    "#f3c623",   // rose pâle clair
-  "réseautage":        "#ef444d",   // framboise franc
-  "expertise-conseil": "#c60472",   // prune foncé
+// ── Services relationnels ──────────────────────
+  "représentation":        "#F3AE51",   // ambre clair
+  "réseautage":    "#E34836",   // rouge franc
+  "expertise-conseil": "#A32E70",   // magenta profond
 
   // ── Services de connaissance ───────────────────
-  "documentation":     "#56d6e7",   // bleu clair
-  "production":        "#1ba4da",   // bleu médian
-  "formation":         "#1c65a4",   // bleu foncé
+  "documentation":     "#37D6DD",   // cyan clair
+  "production":        "#168BE1",   // azur franc
+  "formation":         "#5D52B4",   // indigo profond
 };
 
 

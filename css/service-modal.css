@@ -223,6 +223,11 @@
   color:       rgba(30, 29, 27, 0.75);
 }
 
+.sp-highlight {
+  color: var(--service-color);
+  font-weight: 600;
+}
+
 /* ── CITATION ── */
 
 .sp-section--quote {
