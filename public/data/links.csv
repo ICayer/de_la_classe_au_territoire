@@ -73,3 +73,4 @@ link_071,node_mandataire,node_mrc_12,Mandataire,Rimouski-Neigette,2026-05-08,exp
 link_072,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2026-06-11,représentation,1
 link_073,node_mandataire,node_mrc_08,Mandataire,La Matanie,2026-06-09,représentation,1
 link_074,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2026-06-02,expertise-conseil,1
+link_075,node_mrc_14,node_mrc_12,Kamouraska,Rivière-du-Loup,2026-06-07,production,1
