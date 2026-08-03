@@ -79,8 +79,12 @@ function onZoom(event) {
   //    drawOSM redessine le canvas 2D — net, sans lignes blanches
   drawOSM(width, height, transform);
 
-  // 3. Contre-scaler les nodes — taille visuelle constante
+ // 3. Contre-scaler les nodes — taille visuelle constante
   counterScaleNodes(transform.k);
+
+  // 3bis. Repositionner les boutons de service au zoom
+  // (sans attendre un déplacement de la timeline)
+  document.dispatchEvent(new CustomEvent("mapZoomChanged"));
 
   // 4. Mettre à jour le cercle TAC
   updateBubbleCluster(transform);

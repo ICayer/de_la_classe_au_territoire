@@ -13,6 +13,7 @@ import { currentK } from "../map/mapZoom.js";
 import { dataStore } from "../data/dataStore.js";
 import { COLOR_SERVICES } from "../utils/colors.js";
 import { openServiceModal } from "./serviceModal.js";
+import { state } from "../state.js";
 
 // --------------------------------------------------
 // DONNÉES DES SERVICES DOCUMENTÉS
@@ -199,9 +200,13 @@ export function updateServiceButtons(dateActive) {
       const pos = dataStore.nodePositions[evt.target];
       if (!pos) return;
       // décalage vertical si plusieurs boutons sur le même node
+      // ⚠️ offset multiplié par `scale` pour suivre le même taux de
+      // croissance que les nodes (k^0.4). Sans ça, l'offset (en espace
+      // données) est multiplié par k au complet via gRoot, et le bouton
+      // s'éloigne progressivement de son node au zoom.
       const stack = _stackIndex[uid] || 0;
-      const tx = pos.px + OFFSET_X;
-      const ty = pos.py + OFFSET_Y + stack * STACK_STEP;
+      const tx = pos.px + OFFSET_X * scale;
+      const ty = pos.py + OFFSET_Y * scale + stack * STACK_STEP * scale;
 
       if (currentDisplay === "none") {
         btn.style("display", null)
@@ -231,3 +236,11 @@ export function showServiceButtons() {
 export function hideServiceButtons() {
   gServiceButtons.style("display", "none");
 }
+
+// --------------------------------------------------
+// SYNC ZOOM — recalcule tx/ty/scale sans attendre
+// un tick de la timeline (voir mapZoom.js → onZoom)
+// --------------------------------------------------
+document.addEventListener("mapZoomChanged", () => {
+  updateServiceButtons(state.dateActive);
+});
