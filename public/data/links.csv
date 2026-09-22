@@ -74,3 +74,8 @@ link_072,node_mandataire,node_mrc_14,Mandataire,Kamouraska,2026-06-11,représent
 link_073,node_mandataire,node_mrc_08,Mandataire,La Matanie,2026-06-09,représentation,1
 link_074,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2026-06-02,expertise-conseil,1
 link_075,node_mrc_14,node_mrc_12,Kamouraska,Rivière-du-Loup,2026-06-07,production,1
+link_076,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2026-09-24,représentation,1
+link_077,node_mandataire,node_mrc_10,Mandataire,Rimouski-Neigette,2026-07-15,expertise-conseil,1
+link_078,node_mandataire,node_mrc_08,Mandataire,La Matanie,2026-10-15,représentation,1
+link_079,node_mandataire,node_mrc_07,Mandataire,La Matapédia,2026-11-18,expertise-conseil,1
+link_080,node_mandataire,node_sci_03,Mandataire,Nicolas Devaux,2026-09-16,réseautage,1

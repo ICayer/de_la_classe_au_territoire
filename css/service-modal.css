@@ -297,6 +297,7 @@
 .service-btn .pulse-ring {
   transform-origin: center;
   transform-box:    fill-box;
+  pointer-events:   none;   /* ← ajout : les ondes ne doivent jamais intercepter la souris */
 }
 
 /* Anneau 1 — part immédiatement */
