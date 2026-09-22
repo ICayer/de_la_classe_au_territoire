@@ -63,7 +63,7 @@ export function drawOSM(width, height, transform = d3.zoomIdentity) {
   // Dessiner chaque tuile
   for (const t of tiles) {
     const [x, y, z] = t;
-    const url = `https://cartodb-basemaps-a.global.ssl.fastly.net/light_nolabels/${z}/${x}/${y}.png`;
+    const url = `https://cartodb-basemaps-a.global.ssl.fastly.net/light_nolabels/${z}/${x}/${y}.png?key=cb1_3tuw_1_21aacae1c5951f13f5872374`;
     const key = `${z}/${x}/${y}`;
 
     // Position pixel dans le canvas — coordonnées entières
